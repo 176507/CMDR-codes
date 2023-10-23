@@ -1,0 +1,169 @@
+cmder :orders
+cd : to change the file
+like: cd\file name\file name
+
+mkdir:to create new file 
+like mkdir file name 
+
+to change the drive  type the drive name ans semi culomn 
+like : 	E:
+
+ to make to the main drive type drive  name:\
+like E:\
+ to back to berivous file :
+cd/ file name
+
+to set email address on CMDER:
+git config --global user.email"matroh332@gmail.com"
+git config --global user.email "you@example.com"
+
+to set user name on CMDER:
+git config --global user.name"semo"
+git config --global user.name "Your Name"
+
+TO git clone from reop
+ type: git clone type the link
+ 
+
+  
+to add file to the statage phase:
+git add html\index.html
+ 
+to check the file
+git status
+
+ to delete file from statge
+git reset head file name
+
+to add file to local repo :
+ git commit -m "cerate"
+
+to know the branch on the repo reop
+git branch
+
+to know the remote repo on github
+git remote -v
+
+to send files from local repo to the remont repo
+git push reponame branch name
+ like :git push origin main
+
+to clear the screen
+clear
+
+to download file from git hub account:
+git pull repo name
+ like :git pull origin
+
+to know configration on  cmder
+git config -1
+
+to log into  weppage helb 
+git help config
+
+to know config name nd mail
+git config --global user.email
+git config --global user.name
+
+to set user name on CMDER:
+git config --global user.name"semo"
+git config --global user.name "Your Name"
+
+to create  local repo by using cmder:
+create new file by mkdir
+create repo by order:
+git init 
+
+to create new file
+touch file name
+
+create repo on github
+take the ssh code:
+git remote add origin git@github.com:176507/project.git  
+put it in the cmder 
+
+
+to know the branch of the repo:
+git branch
+
+to create branch on the repo
+git branch the  branch name 
+
+to switch to the other branch that you created  
+git checkout 'branch name'
+like:Switched to branch 'scroll'
+
+to make to the main branch:
+git checkout main
+
+ to delete branch:
+git branch -d scroll  :with auto check on the content in the branch
+git branch -D  without auto check on the content in the branch
+
+to rename the branch
+git branch -m mastert
+
+to migrate the branch to the remote repo  : their are two method"
+first : merge the created branch to the main branch
+to merge the created  to the main branch
+1:switch to the main branch
+git checkout main
+
+2:make the merge 
+git merge mastert
+
+3:git push origin master  
+
+second " migrate cretaed branch directly to the remot repo:
+1-create branch
+2:switch to created branch
+3:make ( git add & git commit -m )
+
+git stash :to store files at stage phase (git add)   in store box
+git stash list : to know the files name in the book
+to restore files  from strore book
+type git stash pop
+
+to give name to the file in the stash box 
+type :git stash save "type the name of the file"
+
+to restore  copy file from stash  and maintain the original file in the stash box
+type:git stash apply
+
+to restore specefic file from stash box 
+type:git stash pop stash@{tne number of the file from stash list}
+
+to delete file from stash
+type:git stash drop stash@{the number of tragit file from stash list}
+
+ to know the contains in the file in the stash :
+type:git stash show stash@{the number of tragit file from stash list}
+
+to destroy all stash boxses
+type:git stash clear
+
+ to git restore from stage phase: git restore --staged file name
+type:git restore --staged all.txt
+
+to delete file after restore it from stage phase
+type:git clean -n  :to show the files that you will delete  it  
+to make delete actoin 
+git cleag -f 
+
+to show the commits that you push it to the remote repo
+type :git log
+to exit from log :
+type letter :q
+
+to delete specific commit   :
+first :change the pointer to the next commit after the target commit  
+type: git reset --hard  type the # of the commit after the target commit 
+second :type git push origin main --force
+
+to create light tag (message from commit)  :
+type:git tag v1.0
+git push origin main v1.0	
+
+to create tag with control message  
+ git tag -a v2.0 -m "new version"
+git push origin main v2.0
